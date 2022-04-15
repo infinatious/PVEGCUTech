@@ -4,7 +4,7 @@
 
 ![](https://i.imgur.com/SnlCyHF.png)
 
-<p align="center">A dark theme for the Proxmox Web UI,<br/> <i>inspired by Discord's color scheme.</i></p>
+<p align="center">A dark GCU Tech Club theme for the Proxmox Web UI,<br/> <i>inspired by GCU's color scheme.</i></p>
 
 <p align="center">Everything is dark, including the graphs, context menus and all in between! Eyes need not be fried.</p>    
 The theme now runs its own JavaScript code which patches the colors for certain components (and charts). This approach is much better, and safer than what was used previously.
@@ -13,12 +13,12 @@ The theme now runs its own JavaScript code which patches the colors for certain 
 The installation is done via the CLI utility. Run the following commands on the PVE node serving the Web UI:
 
 ```
-~# wget https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh
+~# wget https://raw.githubusercontent.com/infinatious/PVEGCUTech/master/PVEDiscordDark.sh
 ~# bash PVEDiscordDark.sh install
 ```
 Or this oneliner
 ```
-bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
+bash <(curl -s https://raw.githubusercontent.com/infinatious/PVEGCUTech/master/PVEDiscordDark.sh ) install
 ```
 
 
@@ -29,7 +29,7 @@ bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/
 The new installer relies on the `/meta/supported` and `/meta/imagelist` files being present in the repository. It also includes a silent mode. Run `bash PVEDiscordDark.sh -h` for usage instructions. 
 
 Furthermore, you will be able to provide the environment variables `REPO` and `TAG` to specify from what repository and from what commit tag to install the theme from.   
-`REPO` is in format `Username/Repository` and defaults to `Weilbyte/PVEDiscordDark` (this repository).    
+`REPO` is in format `Username/Repository` and defaults to `infinatious/PVEGCUTech` (this repository).    
 `TAG` defaults to `master`, but it is strongly recommended to use the SHA-1 commit hash for security.
 
 ## Offline bundle
